@@ -1,13 +1,17 @@
 
 import './App.scoped.scss';
-import { RouterProvider } from "react-router-dom";
-import router from './Router/router';
+import RouteMap from './Router/router';
+import { BrowserRouter as Router, Routes,Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <RouterProvider router={router} />
-    </div>
+<Router>
+    <Routes>
+      {RouteMap().map((route, index) => (
+        <Route key={index} path={route.path} element={route.element} />
+      ))}
+    </Routes>
+  </Router>
   );
 }
 
