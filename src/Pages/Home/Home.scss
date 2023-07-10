@@ -1,0 +1,48 @@
+.home-page {
+    display: flex;
+    height: 100vh;
+    overflow-y: hidden;
+  }
+  
+  .side-nav {
+    background-color: rgba(
+      35,
+      35,
+      35,
+      1
+    ); /* For browsers that do not support gradients */
+    background-image: linear-gradient(
+      to down,
+      rgba(78, 78, 78, 0.79),
+      rgba(35, 35, 35, 1)
+    );
+    width: 150px;
+    /* padding: 10px; */
+    margin-left: 7rem;
+    /* justify-content: center; */
+    flex-shrink: 0;
+    position: relative; /* Add position: relative to establish a positioning context */
+    z-index: 2;
+  }
+  .h-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 3px;
+  }
+  .h-header img {
+    width: 3rem;
+  }
+  main {
+    flex: 1;
+    padding: 10px;
+    position: relative; /* Add position: relative to establish a positioning context */
+    z-index: 0;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+    padding: 10px;
+  }
+  

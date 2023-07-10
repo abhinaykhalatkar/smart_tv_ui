@@ -1,0 +1,67 @@
+.n-container {
+  max-width: max-content;
+  margin: 0 auto; /* Center the container horizontally */
+}
+.n-playstation {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 5rem;
+  margin-top: 4rem;
+  margin-left: 2.5rem;
+  position: relative;
+}
+
+.n-playstation:hover {
+  background-image: linear-gradient(
+    to right,
+    rgba(22, 22, 22, 1),
+    rgba(217, 217, 217, 0)
+  );
+
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  transform: scale(1.05); /* Increase the size by 5% (adjust as needed) */
+  transition: background-color 0.3s, transform 0.5s; /* Add a smooth transition effect */
+  height: 20vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -4rem;
+}
+
+.n-playstation .n-playstationImage img {
+  transform: scale(1);
+  transition: transform 0.5s; /* Add a smooth transition effect */
+}
+
+.n-playstation:hover .n-playstationImage img {
+  transform: scale(
+    1.2
+  ); /* Increase the size of the PlayStation image (adjust as needed) */
+}
+
+.n-playstationImage img {
+  width: 5rem;
+}
+.n-games {
+  display: flex;
+  /* grid-gap: 5rem; */
+  /* gap: 5rem; */
+  grid-gap: 5rem;
+  /* padding: 20px; */
+  /* padding-left: 20px; */
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.n-games img {
+  width: 7rem;
+}
