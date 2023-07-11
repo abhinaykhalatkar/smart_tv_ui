@@ -2,23 +2,23 @@ const tvApps = [
   {
     id: 1,
     name: "Netflix",
-    icon: "netflix.png",
+    icon: "youtube.png",
     items: ["TV Show 1", "TV Show 2", "TV Show 3","TV Show 4"],
-    itemsImage:["show1.png","show2.png","show3.png","show4.png"]
+    itemsImage:["show1.png","show2.png","show3.png","show4.png","show1.png","show1.png"]
   },
   {
     id: 2,
     name: "PlayStation",
     icon: "Vector.png",
     items: ["Game 1", "Game 2", "Game 3","TV Show 5"],
-    itemsImage:["game.png","show6.png","show7.png","show8.png"]
+    itemsImage:["game.png","show6.png","show7.png","show8.png","show6.png","show7.png","show6.png","show7.png"]
   },
   {
     id: 3,
     name: "Youtube",
-    icon: "youtube.png",
+    icon: "netflix.png",
     items: ["TV Show 1", "TV Show 2", "TV Show 3","TV Show 4"],
-    itemsImage:["show5.png","show6.png","show7.png","show8.png"]
+    itemsImage:["show5.png","show6.png","show7.png","show8.png","show2.png","show3.png"]
   },
   {
     id: 4,
@@ -32,7 +32,7 @@ const tvApps = [
     name: "Disney",
     icon: "disney.png",
     items: ["Game 1", "Game 2", "Game 3","TV Show 3"],
-    itemsImage:["game.png","show6.png","show7.png","show8.png"]
+    itemsImage:["game.png","show6.png","show7.png","show2.png","show3.png","show8.png"]
   },
 
   // Add more app objects as needed

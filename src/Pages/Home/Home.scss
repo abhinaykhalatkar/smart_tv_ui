@@ -3,33 +3,48 @@
   height: 100vh;
   width: 100vw;
   overflow-y: hidden;
+  background-color: rgba(39,
+      0,
+      119,
+      0.98);
+  /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, #171717, rgba(22, 1, 65, 0.98));
+  background-size: 170% 100%;
 
   .center-row {
-    overflow: hidden;
+    overflow: visible;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
     height: auto;
-    margin-left: 4rem;
+  
 
-    .app-items {
-      opacity: 0.5;
-      transition: opacity 0.3s ease;
 
-      &.show-items {
-        opacity: 1;
-      }
+
+    .focused {
+      opacity: 1;
+      transform: scale(1.2);
     }
   }
-  .slide-screen{
-    content: '';
+  .app-items-container {
+    overflow-x: auto;
+    white-space: nowrap;
+  
+    .app-items {
+      display: inline-block;
+    }
+  }
+  
+
+  .slide-screen {
+    content: "";
     position: absolute;
     height: 100vh;
     width: 100vw;
-    
   }
+
   .side-bar {
     position: absolute;
     display: flex;
@@ -37,7 +52,26 @@
     align-items: center;
     flex-direction: column;
     background-color: rgba(35, 35, 35, 1);
-    background-image: linear-gradient(to down, rgba(78, 78, 78, 0.79), rgba(35, 35, 35, 1));
+    background-image: -webkit-linear-gradient(
+      top,
+      rgba(78, 78, 78, 0.79),
+      rgba(35, 35, 35, 1)
+    );
+    background-image: -moz-linear-gradient(
+      top,
+      rgba(78, 78, 78, 0.79),
+      rgba(35, 35, 35, 1)
+    );
+    background-image: -o-linear-gradient(
+      top,
+      rgba(78, 78, 78, 0.79),
+      rgba(35, 35, 35, 1)
+    );
+    background-image: linear-gradient(
+      to bottom,
+      rgba(78, 78, 78, 0.79),
+      rgba(35, 35, 35, 1)
+    );
     width: 15rem;
     height: 100%;
     margin-left: 5rem;
@@ -61,16 +95,8 @@
       &.selected {
         img {
           opacity: 1;
+          transform: scale(1.3);
         }
-      }
-    }
-
-    .app-items {
-      opacity: 0;
-      width: 100%;
-      transition: opacity 0.3s ease;
-      &.show-items {
-        opacity: 1;
       }
     }
   }

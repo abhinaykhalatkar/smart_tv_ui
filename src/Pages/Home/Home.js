@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import "./Home.scss";
 import AppIcon from "./AppIcon";
 import AppItems from "./AppItems";
-
+let runCount=1;
 const Home = ({ tvApps }) => {
   const [highlightedIndex, setHighlightedIndex] = useState(
     Math.floor(tvApps.length / 2)
@@ -56,7 +56,8 @@ const Home = ({ tvApps }) => {
   };
   return (
     <div className="home-page">
-      <AnimatePresence>
+      <AnimatePresence >
+ 
         <motion.div
           className="side-bar"
           initial={{ x: -200 ,zIndex:1,}}
@@ -71,13 +72,15 @@ const Home = ({ tvApps }) => {
         >
           {tvApps.map((app, index) => (
             <AppIcon
-              key={app.name}
+              key={`${app.id}apps`}
               app={app}
               onClick={() => handleClick(index)}
               isSelected={index === highlightedIndex}
             />
           ))}
         </motion.div>
+        </AnimatePresence>
+        <AnimatePresence>
         
         <motion.div
           className="center-row"
@@ -91,33 +94,18 @@ const Home = ({ tvApps }) => {
             duration: 0.2,
           }}
         >
-          <AnimatePresence>
             {tvApps.map((app, index) => (
-              <AppItems
+          
+            <AppItems
+              key={`${app.id}itemRow`}
                 items={app}
                 highlightedIndex={highlightedIndex}
                 currentIndex={index}
               />
+
+              
             ))}
-          </AnimatePresence>
         </motion.div>
-        {/* {isAnimating && (
-        <motion.div
-          className="slide-screen"
-          initial={{ x: -100, opacity:1, zIndex:1, backgroundColor: "black" }}
-          animate={{ x: 0,  opacity: 1 ,zIndex:1}}
-          exit={{ x: 200, opacity: 1 }}
-          transition={{
-            type: "spring",
-            damping: 5,
-            stiffness: 100,
-            ease: [0, 0.71, 0.2, 1],
-            duration: 2,
-          }}
-        >
-          {"hi"}
-        </motion.div>
-      )} */}
       </AnimatePresence>
     </div>
   );
