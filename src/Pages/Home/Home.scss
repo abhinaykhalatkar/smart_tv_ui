@@ -1,48 +1,77 @@
 .home-page {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow-y: hidden;
+
+  .center-row {
+    overflow: hidden;
     display: flex;
-    height: 100vh;
-    overflow-y: hidden;
-  }
-  
-  .side-nav {
-    background-color: rgba(
-      35,
-      35,
-      35,
-      1
-    ); /* For browsers that do not support gradients */
-    background-image: linear-gradient(
-      to down,
-      rgba(78, 78, 78, 0.79),
-      rgba(35, 35, 35, 1)
-    );
-    width: 150px;
-    /* padding: 10px; */
-    margin-left: 7rem;
-    /* justify-content: center; */
-    flex-shrink: 0;
-    position: relative; /* Add position: relative to establish a positioning context */
-    z-index: 2;
-  }
-  .h-header {
-    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: flex-end;
-    padding: 3px;
-  }
-  .h-header img {
-    width: 3rem;
-  }
-  main {
-    flex: 1;
-    padding: 10px;
-    position: relative; /* Add position: relative to establish a positioning context */
-    z-index: 0;
-  }
-  .content {
-    display: flex;
     flex-direction: column;
-    gap: 65px;
-    padding: 10px;
+    width: 100%;
+    height: auto;
+    margin-left: 4rem;
+
+    .app-items {
+      opacity: 0.5;
+      transition: opacity 0.3s ease;
+
+      &.show-items {
+        opacity: 1;
+      }
+    }
   }
-  
+  .slide-screen{
+    content: '';
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    
+  }
+  .side-bar {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(35, 35, 35, 1);
+    background-image: linear-gradient(to down, rgba(78, 78, 78, 0.79), rgba(35, 35, 35, 1));
+    width: 15rem;
+    height: 100%;
+    margin-left: 5rem;
+    position: relative;
+    z-index: 2;
+
+    .app-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 20%;
+      width: 100%;
+
+      img {
+        height: auto;
+        width: 10rem;
+        object-fit: cover;
+        opacity: 0.5;
+      }
+
+      &.selected {
+        img {
+          opacity: 1;
+        }
+      }
+    }
+
+    .app-items {
+      opacity: 0;
+      width: 100%;
+      transition: opacity 0.3s ease;
+      &.show-items {
+        opacity: 1;
+      }
+    }
+  }
+}

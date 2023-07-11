@@ -1,12 +1,14 @@
 
 body {
+  overflow: hidden;
     background-color: rgba(
       39,
       0,
       119,
       0.98
     ); /* For browsers that do not support gradients */
-    background-image: linear-gradient(to right, #171717, rgba(39, 0, 119, 0.98));
+    background-image: linear-gradient(to right, #171717, rgba(22, 1, 65, 0.98));
+    background-size: 170% 100%;
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
       "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",

@@ -1,0 +1,31 @@
+.app-items{
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-column-gap: 10px;
+  height: 14%;
+  width: 100%;
+  justify-content:space-between;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+
+  &.show-items {
+    opacity: 1;
+  }
+    .item {
+
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+     
+ 
+      
+        img {
+          border-radius: 20px 0px 20px 0px;
+    
+          object-fit: cover;
+          height: 100%;
+          width: 100px;
+        }
+      }
+}
