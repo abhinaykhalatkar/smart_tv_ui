@@ -1,6 +1,8 @@
 import Home from "../Pages/Home/Home";
-import SignUp from "../Pages/Sign-up/Sign-up";
+import Signup from "../Pages/Signup/Signup";
 import tvApps from "../Pages/Home/tvAppsData";
+import Login from "../Pages/Login/Login";
+
 const routeMap = () => {
     return [
       {
@@ -9,7 +11,12 @@ const routeMap = () => {
       },
       {
         path: '/sign-up',
-        element: <SignUp />
+        element: <Signup />
+     
+      },
+      {
+        path: '/Login',
+        element: <Login />
       }
     ];
   };
