@@ -22,13 +22,18 @@ const MobileView = ({ apps }) => {
           ))}
         </div>
       </div>
-      <div className="apps-module">
+      <div className="fshow">
         <div className="title">
           <p>Top picks for you </p>
         </div>
         <div className="apps-icons">
-          {apps.map((app) => (
-            <AppIcon key={`${app.id}apps`} app={app} />
+          {apps[0].itemsImage.map((app,index) => (
+            <div
+            key={`${index}${app[index]}`}
+            className="item"
+          >
+            <img src={`/shows/${app}`} alt={app} />
+          </div>
           ))}
         </div>
       </div>

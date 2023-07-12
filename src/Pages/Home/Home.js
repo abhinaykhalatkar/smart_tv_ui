@@ -4,6 +4,8 @@ import "./Home.scss";
 import AppIcon from "./AppIcon";
 import AppItems from "./AppItems";
 import MobileView from "./MobileHome";
+import { CgProfile } from 'react-icons/cg';
+import MuiSwitch from "../../Units/MUISwitch/MuiSwitch";
 
 const Home = ({ tvApps }) => {
   const [highlightedIndex, setHighlightedIndex] = useState(
@@ -14,18 +16,17 @@ const Home = ({ tvApps }) => {
   useEffect(() => {
     const handleResize = () => {
       const screenWidth = window.innerWidth;
-      setIsMobile(screenWidth <= 480); 
+      setIsMobile(screenWidth <= 480);
     };
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
     handleResize();
 
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
-
 
   useEffect(() => {
     const handleKeyDown = (event) => {
@@ -67,58 +68,61 @@ const Home = ({ tvApps }) => {
     const newIndex = (highlightedIndex + 1) % tvApps.length;
     setHighlightedIndex(newIndex);
   };
-  return (
-   isMobile?<MobileView apps={tvApps}/>:<div className="home-page">
-   <AnimatePresence >
+  return isMobile ? (
+    <MobileView apps={tvApps} />
+  ) : (
 
-     <motion.div
-       className="side-bar"
-       initial={{ x: -350 }}
-       animate={{ x: 10 }}
-       transition={{
-         type: "spring",
-         damping: 7,
-         stiffness: 100,
-         ease: [0, 1, 0.5, 1],
-         duration: 0.2,
-       }}
-     >
-       {tvApps.map((app, index) => (
-         <AppIcon
-           key={`${app.id}apps`}
-           app={app}
-           onClick={() => handleClick(index)}
-           isSelected={index === highlightedIndex}
-         />
-       ))}
-     </motion.div>
-     </AnimatePresence>
-     <AnimatePresence>
-     
-     <motion.div
-       className="center-row"
-       initial={{ x: "100%", opacity: 0 }}
-       animate={{ x: "26%", opacity: 1 }}
-       transition={{
-         type: "spring",
-         damping: 7,
-         stiffness: 100,
-         ease: [0, 1, 0.5, 1],
-         duration: 0.2,
-       }}
-     >
-         {tvApps.map((app, index) => (
-             
-           <AppItems
-           key={`${app.id}itemRow`}
-             items={app}
-             highlightedIndex={highlightedIndex}
-             currentIndex={index}
-           />
-         ))}
-     </motion.div>
-   </AnimatePresence>
- </div>
+      <div className="home-page">
+        <CgProfile className="profile-icon"/>
+        <MuiSwitch />
+      <AnimatePresence>
+        <motion.div
+          className="side-bar"
+          initial={{ x: -350 }}
+          animate={{ x: 10 }}
+          transition={{
+            type: "spring",
+            damping: 7,
+            stiffness: 100,
+            ease: [0, 1, 0.5, 1],
+            duration: 0.2,
+          }}
+        >
+          {tvApps.map((app, index) => (
+            <AppIcon
+              key={`${app.id}apps`}
+              app={app}
+              onClick={() => handleClick(index)}
+              isSelected={index === highlightedIndex}
+            />
+          ))}
+        </motion.div>
+      </AnimatePresence>
+      <AnimatePresence>
+        <motion.div
+          className="center-row"
+          initial={{ x: "100%", opacity: 0 }}
+          animate={{ x: "26%", opacity: 1 }}
+          transition={{
+            type: "spring",
+            damping: 7,
+            stiffness: 100,
+            ease: [0, 0.7, 0.5, 1],
+            duration: 0.2,
+          }}
+        >
+          {tvApps.map((app, index) => (
+            <AppItems
+              key={`${app.id}itemRow`}
+              items={app}
+              highlightedIndex={highlightedIndex}
+              currentIndex={index}
+            />
+          ))}
+        </motion.div>
+      </AnimatePresence>
+    </div>
+    
   );
 };
 

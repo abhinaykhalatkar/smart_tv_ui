@@ -1,6 +1,7 @@
 .p-mobile-home {
     display: flex;
     flex-direction: column;
+    height: 100%;
 
     .apps-module{
         display: flex;
@@ -24,24 +25,60 @@
                 filter: invert(100%) sepia(6%) saturate(7293%) hue-rotate(166deg) brightness(107%) contrast(100%);
             }
         }
-    }
-    .apps-icons {
+        .apps-icons {
 
-        overflow-x: scroll;
+            overflow-x: scroll;
+            display: flex;
+    
+           .app-icon{
+            padding: 10px;
+            img {
+                height: 80px;
+                width: 80px;
+            }
+           }
+    
+            &::-webkit-scrollbar {
+                width: 0;
+                height: 0;
+                background: transparent;
+            }
+        }
+    }
+    .fshow{
         display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-left: 20px;
+        margin-top: 30px;
+        .title{
+            color: azure;
+            p{
 
-       .app-icon{
-        padding: 10px;
-        img {
-            height: 80px;
-            width: 80px;
+                font-size: large;
+                font-weight: 400;
+            }
         }
-       }
+        .apps-icons {
+            display: flex;  
+            flex-wrap: wrap;
 
-        &::-webkit-scrollbar {
-            width: 0;
-            height: 0;
-            background: transparent;
+    
+           .item{
+            height: 150px;
+            width: 50%;
+            margin: 5px;
+            flex: 40%;
+            margin-bottom: 10px;
+            img {
+                border-radius: 15px;
+                object-fit: cover;
+                height: 150px;
+                width: 100%;
+            }
+           }
         }
+
     }
+  
 }
