@@ -35,7 +35,7 @@ const AppItems = ({ items, highlightedIndex, currentIndex }) => {
     >
       {items.itemsImage.map((item, index) => (
         <div
-          key={`${items.id}${items.itemsImage[index]}`}
+          key={`${index}${items.itemsImage[index]}`}
           className="item"
         >
           <img src={`/shows/${item}`} alt={item} />

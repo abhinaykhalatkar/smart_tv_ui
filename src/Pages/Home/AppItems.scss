@@ -1,8 +1,10 @@
 .app-items {
-  height: 14%;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  width: 100vw;
+  padding-left: 15%;
+  height: 15%;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
   opacity: 0.2;
   text-align: center;
 
@@ -11,42 +13,43 @@
   }
 
   .item {
-    align-items: center;
-    justify-content: center;
+    width: 20%;
     height: 100%;
 
     img {
       border-radius: 20px 0px 20px 0px;
-      object-fit: cover;
       height: 100%;
-      width: 100px;
+
+    }
+    @media only screen and (max-width: 768px)  {
+      flex: 0 0 25%;
+    }
+    @media only screen and (min-width: 768px) and (max-width: 980px) {
+      flex: 0 0 20%;
+
+    }
+    @media only screen and (min-width: 980px){
+      flex: 0 0 13%;
+
+    }
+
+    
+    &:not(:last-child) {
+      margin-right: 10px; 
     }
   }
-}
-// .scrolling-wrapper {
-//   overflow-x: scroll;
-//   overflow-y: hidden;
-//   white-space: nowrap;
-
-//   .item{
-//     display: inline-block;
-//   }
-// }
-.scrolling-wrapper-flexbox {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-
-  .item {
-    flex: 0 0 auto;
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background: transparent;
+  }
+  @media only screen and (max-width: 480px)  {
+    display: none;
   }
 }
 
 
 .highlighted {
-  overflow: visible;
-  margin-right: 22rem;
-  padding-left: 18rem;
   background-color: rgba(35, 35, 35, 1);
   background-image: linear-gradient(
     to down,
@@ -54,11 +57,10 @@
     rgba(35, 35, 35, 1)
   );
   opacity: 1;
-  transform: scale(1.1, 1.25);
-
-  .item {
-   
-    
+  transform: scale(1.1,1.2);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  .item{
+    transform: scale(1,0.9);
   }
-
 }

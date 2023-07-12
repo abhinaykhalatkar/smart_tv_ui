@@ -1,0 +1,20 @@
+.Navbar-c{
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent !important;
+    .Navbar-title{
+        font-size: large;
+        font-weight: 700;
+    }
+    svg{
+        height: 100%;
+        width: auto;
+    }
+    .mr-auto{
+        width: 84px;
+    }
+    .mr-5px{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}

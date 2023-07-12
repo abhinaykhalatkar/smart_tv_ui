@@ -1,0 +1,47 @@
+.p-mobile-home {
+    display: flex;
+    flex-direction: column;
+
+    .apps-module{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-left: 20px;
+        margin-top: 30px;
+        .title{
+            display: flex;
+            color: azure;
+            flex-basis: 50%;
+            p{
+                line-height: 100%;
+                vertical-align: middle;
+                font-size: large;
+                font-weight: 400;
+            }
+            svg{height: 100%;
+                margin-left: 10%;
+                padding-top: 3px;
+                filter: invert(100%) sepia(6%) saturate(7293%) hue-rotate(166deg) brightness(107%) contrast(100%);
+            }
+        }
+    }
+    .apps-icons {
+
+        overflow-x: scroll;
+        display: flex;
+
+       .app-icon{
+        padding: 10px;
+        img {
+            height: 80px;
+            width: 80px;
+        }
+       }
+
+        &::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+            background: transparent;
+        }
+    }
+}
