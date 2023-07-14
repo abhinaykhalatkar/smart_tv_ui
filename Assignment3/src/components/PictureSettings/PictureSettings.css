@@ -1,0 +1,50 @@
+.profile-content {
+  background: white;
+  border-radius: 10px;
+  margin-top: 36px;
+  padding: 20px;
+  text-align: left;
+  padding: 52px;
+}
+
+/* .profile-content h3 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-top: 0;
+  color: #000000;
+} */
+
+.profile-content h3 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 0;
+  color: #282828;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.profile-content.active {
+  display: block;
+}
+.profile-content ul {
+  padding-left: 0;
+  list-style-type: none;
+  margin-bottom: 0;
+}
+
+.profile-content ul li {
+  position: relative;
+  padding-bottom: 5px;
+  cursor: pointer;
+  font-size: x-large;
+  font-weight: 300;
+}
+
+.profile-content ul li:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+}

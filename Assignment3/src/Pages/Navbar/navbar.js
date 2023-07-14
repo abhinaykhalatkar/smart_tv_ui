@@ -11,7 +11,7 @@ function navbar() {
         <nav className="NavbarItems">
             <h1 className="navbar-logo">YourTV</h1>
             <ul className="nav-links">
-                <Link className="link" to='/'>Home</Link>
+                <Link className="link" to='/home'>Home</Link>
                 <Link className="link" to='/Apps'>Apps</Link>
                 <Link className="link" to='/Search'>Search</Link>
                 <Link className="link" to='/Settings'>Settings</Link>

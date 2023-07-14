@@ -3,20 +3,24 @@ import { motion, AnimatePresence } from "framer-motion";
 import "./Home.scss";
 import AppIcon from "./AppIcon";
 import AppItems from "./AppItems";
+import { useNavigate } from "react-router-dom";
 import MobileView from "./MobileHome";
 import { CgProfile } from 'react-icons/cg';
 import MuiSwitch from "../../Units/MUISwitch/MuiSwitch";
 
 const Home = ({ tvApps }) => {
+  const [isDark, setIsDark] = useState(true);
+
   const [highlightedIndex, setHighlightedIndex] = useState(
     Math.floor(tvApps.length / 2)
   );
   const [isAnimating, setIsAnimating] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const navigate = useNavigate();
   useEffect(() => {
     const handleResize = () => {
       const screenWidth = window.innerWidth;
-      setIsMobile(screenWidth <= 480);
+      setIsMobile(screenWidth <= 600);
     };
 
     window.addEventListener("resize", handleResize);
@@ -68,13 +72,21 @@ const Home = ({ tvApps }) => {
     const newIndex = (highlightedIndex + 1) % tvApps.length;
     setHighlightedIndex(newIndex);
   };
+  const handleSetColor = () => {
+    setIsDark(!isDark)
+
+
+  }
+  const handleProfileClick = () => {
+    navigate("/userSelection");
+  };
   return isMobile ? (
     <MobileView apps={tvApps} />
   ) : (
 
-      <div className="home-page">
-        <CgProfile className="profile-icon"/>
-        <MuiSwitch />
+    <div className={`home-page ${isDark ? "dark" : "notDark"}`} >
+      <CgProfile className="profile-icon" onClick={handleProfileClick} />
+      <MuiSwitch handleColor={handleSetColor} />
       <AnimatePresence>
         <motion.div
           className="side-bar"
@@ -122,7 +134,7 @@ const Home = ({ tvApps }) => {
         </motion.div>
       </AnimatePresence>
     </div>
-    
+
   );
 };
 

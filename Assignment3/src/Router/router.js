@@ -4,22 +4,22 @@ import tvApps from "../Pages/Home/tvAppsData";
 import Login from "../Pages/Login/Login";
 
 const routeMap = () => {
-    return [
-      {
-        path: '/',
-        element:<Home tvApps={tvApps} />
-      },
-      {
-        path: '/sign-up',
-        element: <Signup />
-     
-      },
-      {
-        path: '/Login',
-        element: <Login />
-      }
-    ];
-  };
-  
-  export default routeMap;
-  
+  return [
+    {
+      path: '/',
+      element: <Signup />
+
+    },
+    {
+      path: '/home',
+      element: <Home tvApps={tvApps} />
+    },
+
+    {
+      path: '/Login',
+      element: <Login />
+    }
+  ];
+};
+
+export default routeMap;

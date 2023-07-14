@@ -51,12 +51,12 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   }
 }));
 
-export default function MuiSwitch() {
+export default function MuiSwitch({ handleColor }) {
   return (
-      <FormControlLabel className="MuiSwitch"
-        control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked />}
-       
-      />
-   
+    <FormControlLabel className="MuiSwitch" onClick={handleColor}
+      control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked />}
+
+    />
+
   );
 }

@@ -1,18 +1,21 @@
+.body {
+  overflow: hidden;
+}
 .home-page {
-  .profile-icon{
+  .profile-icon {
     position: fixed;
-    top: 20px; 
-    left: 20px; 
-    z-index: 9999; 
+    top: 20px;
+    left: 20px;
+    z-index: 9999;
     color: aliceblue;
     height: 40px;
     width: 40px;
   }
-  .MuiSwitch{
-    position: fixed ;
-    top: 70px; 
-    left: 15px; 
-    z-index: 9999; 
+  .MuiSwitch {
+    position: fixed;
+    top: 70px;
+    left: 15px;
+    z-index: 9999;
     color: #ebf1f7;
     height: 40px;
     width: 40px;
@@ -21,26 +24,15 @@
   height: 100vh;
   width: 100vw;
   overflow: hidden;
-  background-color: rgba(39,
-      0,
-      119,
-      0.98);
-  /* For browsers that do not support gradients */
-  background-image: linear-gradient(to right, #171717, rgba(22, 1, 65, 0.98));
-  background-size: 170% 100%;
 
   .center-row {
-    
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
     width: 80%;
     height: auto;
-
   }
-
- 
 
   .side-bar {
     position: fixed;
@@ -83,8 +75,9 @@
 
       img {
         height: 100%;
-      width: 100%;
+        width: 100%;
         opacity: 0.7;
+        transform: scale(0.6);
       }
 
       &.selected {
@@ -94,8 +87,18 @@
         }
       }
     }
-    @media only screen and (max-width: 480px)  {
+    @media only screen and (max-width: 480px) {
       display: none;
     }
   }
+}
+.dark {
+  background-color: rgba(39, 0, 119, 0.98);
+  background-image: linear-gradient(to right, #171717, rgba(22, 1, 65, 0.98));
+  background-size: 170% 100%;
+}
+.notDark {
+  background-color: rgba(207, 203, 215, 0.98);
+  background-image: linear-gradient(to right, #656565fa, #d1d0d0);
+  background-size: 170% 100%;
 }

@@ -1,0 +1,55 @@
+.user-selection-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20rem;
+}
+.user-selection-container h3 {
+  color: rgb(255, 255, 255);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-decoration: underline rgb(98, 98, 98);
+  text-decoration: underline;
+}
+.user-images {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.user-images img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 7px solid white;
+}
+.user {
+  margin: 0 20px;
+}
+.user p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #7b7b7b;
+  font-family: sans-serif;
+  font-size: medium;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+  .user-images {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+  .user-selection-container {
+    margin-top: 3rem;
+  }
+}

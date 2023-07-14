@@ -1,0 +1,148 @@
+.container {
+  max-width: 100%;
+  padding: 60px;
+  margin-top: 15px;
+}
+.back-button {
+  color: white;
+}
+.profile-card {
+  padding: 20px;
+  box-shadow: 20px 20px 30px 5px rgb(65 43 43 / 10%);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+}
+.logout-button {
+  position: absolute;
+  top: 70px;
+  right: 70px;
+  cursor: pointer;
+  color: white;
+}
+.profile-image {
+  background: url("https://source.unsplash.com/YUu9UAcOKZ4");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 7px solid #ffffff;
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.profile-card h3 {
+  margin: 0;
+}
+.user-details {
+  margin-bottom: 20px;
+}
+
+.user-details p {
+  color: #777;
+  margin-bottom: 0.1rem;
+}
+.user-details h3 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-top: 0;
+  color: #ffffff;
+}
+.settings-column {
+  background-color: #454545ab;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(194, 194, 194, 0.1);
+  margin-top: 35px;
+  text-align: left;
+}
+.settings-column h3 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-top: 0;
+  color: #ffffff;
+}
+.settings-column ul {
+  padding-left: 0;
+  list-style-type: none;
+  margin-bottom: 0;
+}
+ul {
+  list-style-type: none;
+}
+.settings-column li {
+  margin-bottom: 10px;
+  cursor: pointer;
+  color: #777;
+  font-size: x-large;
+  font-weight: 300;
+}
+.settings-options {
+  margin-top: 25px;
+}
+.settings-options li.active {
+  font-size: x-large;
+  color: #fcfcfc;
+}
+
+.settings-options li {
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.settings-options li:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+}
+.down-arrow {
+  color: white;
+  /* padding: 48px; */
+  margin-top: -40px;
+}
+.chartSection {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s, transform 1s;
+  align-items: center;
+}
+
+.chart-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.bouncy-image {
+  animation: bounce 1s infinite alternate;
+  cursor: pointer;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    width: 92%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 30px;
+  }
+  .logout-button {
+    top: 45px;
+  }
+}
