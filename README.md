@@ -80,7 +80,7 @@ Additionally, we have included a research report in PDF format, which provides i
 In this assignment, we leveraged React to develop the TV UI. To set up the project locally, follow the steps below:
 
 1. Install the project dependencies by running the command:
-npm install
+npm install --force
 
 
 2. Start the development server by running the command:
