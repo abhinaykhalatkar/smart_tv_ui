@@ -1,13 +1,12 @@
 # Smart TV UI/UX Project
 
-This repository contains the source code and design files for the Smart TV UI/UX project, completed as part of the Fundamentals Towards UX module. The project aimed to implement and design a user interface for a smart TV.
+This repository contains the source code and design files for the Smart TV UI/UX project, completed as part of a university assignment. The project aimed to implement and design a user interface for a smart TV.
 
-## Team Members and Tasks
+## Team Members
 
-- Virendra Kadam     - profile page and customization page, log out added
-- Abhinay Khalatkar  - home page
-- Ankush Gangal      - sign-up page
-
+-Virendra Kadam - profile page and customization page, log out added
+-Abhinay Khalatkar - home page
+-Ankush Gangal - sign-up page
 
 ## Contents
 
@@ -36,11 +35,23 @@ Additionally, we have included a research report in PDF format, which provides i
 In this assignment, we leveraged React to develop the TV UI. To set up the project locally, follow the steps below:
 
 1. Install the project dependencies by running the command:
-npm install
+npm install --force
+
 
 2. Start the development server by running the command:
-   
-Certainly! Here's the exact content you can paste into your README file:
+npm start
 
-python
-Copy code
+This will launch the TV UI in your default web browser.
+
+
+## Acknowledgements
+
+We would like to express our gratitude to our professors 
+
+Sagar Shimpi 
+
+Gunjan Kadu
+
+who provided valuable guidance and support throughout the project. Their feedback and suggestions played a crucial role in shaping the final product.
+
+If you have any questions or suggestions, please feel free to reach out to any of the team members mentioned above. Thank you for your interest in our project!
