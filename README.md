@@ -1,6 +1,6 @@
 # Smart TV UI/UX Project
 
-This repository contains the source code and design files for the Smart TV UI/UX project, completed as part of a university assignment. The project aimed to implement and design a user interface for a smart TV.
+This repository contains the source code and design files for the Smart TV UI/UX project, completed as part of the Fundamentals Towards UX module. The project aimed to implement and design a user interface for a smart TV.
 
 ## Team Members
 
