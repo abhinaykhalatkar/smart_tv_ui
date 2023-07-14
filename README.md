@@ -92,8 +92,11 @@ This will launch the TV UI in your default web browser.
 ## Acknowledgements
 
 We would like to express our gratitude to our professors 
+
 Sagar Shimpi 
+
 Gunjan Kadu
+
 who provided valuable guidance and support throughout the project. Their feedback and suggestions played a crucial role in shaping the final product.
 
 If you have any questions or suggestions, please feel free to reach out to any of the team members mentioned above. Thank you for your interest in our project!
