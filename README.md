@@ -2,11 +2,12 @@
 
 This repository contains the source code and design files for the Smart TV UI/UX project, completed as part of the Fundamentals Towards UX module. The project aimed to implement and design a user interface for a smart TV.
 
-## Team Members
+## Team Members and Tasks
 
-- Virendra Kadam
-- Abhinay Khalatkar
-- Ankush Gangal
+- Virendra Kadam     - profile page and customization page
+- Abhinay Khalatkar  - home page
+- Ankush Gangal      - sign-up page
+
 
 ## Contents
 
