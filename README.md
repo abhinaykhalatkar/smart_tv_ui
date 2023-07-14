@@ -5,7 +5,9 @@ This repository contains the source code and design files for the Smart TV UI/UX
 ## Team Members
 
 -Virendra Kadam - profile page and customization page, log out added
+
 -Abhinay Khalatkar - home page
+
 -Ankush Gangal - sign-up page
 
 ## Contents
