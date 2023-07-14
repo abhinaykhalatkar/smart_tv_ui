@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+# Smart TV UI/UX Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains the source code and design files for the Smart TV UI/UX project, completed as part of a university assignment. The project aimed to implement and design a user interface for a smart TV.
 
-## Available Scripts
+## Team Members
 
-In the project directory, you can run:
+- Virendra Kadam
+- Abhinay Khalatkar
+- Ankush Gangal
 
-### `npm start`
+## Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. [Assignment 1](#assignment-1)
+2. [Assignment 2](#assignment-2)
+3. [Assignment 3](#assignment-3)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Assignment 1
 
-### `npm test`
+In this assignment, we focused on creating the initial design and user experience for the smart TV interface. The following components were developed:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Persona: Detailed user profiles that represent our target audience.
+- User Stories: Descriptions of various scenarios and interactions from the user's perspective.
+- User Flow: Visualization of the user's journey and interactions within the TV interface.
+- Lo-fi Prototype: Low-fidelity prototype showcasing the basic layout and functionality of the interface.
+- Hi-fi Prototype: High-fidelity prototype, including visual design and interactive elements. A PDF version of the hi-fi prototype is available in the repository. You can also access the prototype on Figma using the provided link.
 
-### `npm run build`
+## Assignment 2
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+In this assignment, we focused on implementing the TV UI designs using HTML and CSS. The goal was to translate the hi-fi prototype into a functional user interface. The repository contains the necessary HTML and CSS files for the TV UI design.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Additionally, we have included a research report in PDF format, which provides insights and analysis related to our design decisions and user testing results.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Assignment 3
 
-### `npm run eject`
+In this assignment, we leveraged React to develop the TV UI. To set up the project locally, follow the steps below:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Install the project dependencies by running the command:
+npm install
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Start the development server by running the command:
+   
+Certainly! Here's the exact content you can paste into your README file:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+python
+Copy code
+# Smart TV UI/UX Project
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+This repository contains the source code and design files for the Smart TV UI/UX project, completed as part of a university assignment. The project aimed to implement and design a user interface for a smart TV.
 
-## Learn More
+## Team Members
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Virendra Kadam
+- Abhinay Khalatkar
+- Ankush Gangal
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contents
 
-### Code Splitting
+1. [Assignment 1](#assignment-1)
+2. [Assignment 2](#assignment-2)
+3. [Assignment 3](#assignment-3)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Assignment 1
 
-### Analyzing the Bundle Size
+In this assignment, we focused on creating the initial design and user experience for the smart TV interface. The following components were developed:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Persona: Detailed user profiles that represent our target audience.
+- User Stories: Descriptions of various scenarios and interactions from the user's perspective.
+- User Flow: Visualization of the user's journey and interactions within the TV interface.
+- Lo-fi Prototype: Low-fidelity prototype showcasing the basic layout and functionality of the interface.
+- Hi-fi Prototype: High-fidelity prototype, including visual design and interactive elements. A PDF version of the hi-fi prototype is available in the repository. You can also access the prototype on Figma using the provided link.
 
-### Making a Progressive Web App
+## Assignment 2
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+In this assignment, we focused on implementing the TV UI designs using HTML and CSS. The goal was to translate the hi-fi prototype into a functional user interface. The repository contains the necessary HTML and CSS files for the TV UI design.
 
-### Advanced Configuration
+Additionally, we have included a research report in PDF format, which provides insights and analysis related to our design decisions and user testing results.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Assignment 3
 
-### Deployment
+In this assignment, we leveraged React to develop the TV UI. To set up the project locally, follow the steps below:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+1. Install the project dependencies by running the command:
+npm install
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+2. Start the development server by running the command:
+npm start
+
+This will launch the TV UI in your default web browser.
+
+
+## Acknowledgements
+
+We would like to express our gratitude to our professors and peers who provided valuable guidance and support throughout the project. Their feedback and suggestions played a crucial role in shaping the final product.
+
+If you have any questions or suggestions, please feel free to reach out to any of the team members mentioned above. Thank you for your interest in our project!
