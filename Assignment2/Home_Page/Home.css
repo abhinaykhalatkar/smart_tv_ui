@@ -1,0 +1,149 @@
+body{
+    display: flex;
+    /* background-color: rgba(39, 0, 119, 0.98);
+    background-image: linear-gradient(to right, #171717, rgba(22, 1, 65, 0.98));
+    background-size: 170% 100%; */
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    margin: 0;
+}
+.profile-icon{
+    height: 40px;
+    width: 40px;
+    top: 10px;
+    
+}
+.switchW {
+    top: 60px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2em;
+    align-items: center;
+  }
+.side-icons{
+    left: 10px;
+    position: fixed;
+}
+.slider-bar{
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(35, 35, 35, 1);
+    background-image: -webkit-linear-gradient(
+      top,
+      rgba(78, 78, 78, 0.79),
+      rgba(35, 35, 35, 1)
+    );
+    background-image: -moz-linear-gradient(
+      top,
+      rgba(78, 78, 78, 0.79),
+      rgba(35, 35, 35, 1)
+    );
+    background-image: -o-linear-gradient(
+      top,
+      rgba(78, 78, 78, 0.79),
+      rgba(35, 35, 35, 1)
+    );
+    background-image: linear-gradient(
+      to bottom,
+      rgba(78, 78, 78, 0.79),
+      rgba(35, 35, 35, 1)
+    );
+   
+    height: 100%;
+    margin-left: 10%;
+    width: 10%;
+    z-index: 2;
+}
+
+.center-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    margin-left: 20%;
+  }
+
+.app-icons{
+    height: 18%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* switch css */
+
+  
+  .label-text {
+    font-weight: bolder;
+    font-size: 2rem;
+  }
+  
+  .switch-wrap {
+    cursor: pointer;
+    background: #15273b;
+    padding: 7px;
+    width: 30px;
+    height: 15px;
+    border-radius: 33.5px;
+  }
+  .switch-wrap input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .switch {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 0fr 1fr 1fr;
+    transition: 0.2s;
+  }
+  .switch::after {
+    content: "";
+    border-radius: 50%;
+    background: #ccc;
+    grid-column: 2;
+    transition: background 0.2s;
+  }
+  
+  input:checked + .switch {
+    grid-template-columns: 1fr 1fr 0fr;
+  }
+  input:checked + .switch::after {
+    background-color: #52cf71;
+  }
